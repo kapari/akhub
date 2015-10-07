@@ -33,14 +33,14 @@ module.exports = function(grunt) {
               compass: true
             },
             files: {
-              '<%= project.assets %>/css/style.css': '<%= project.css %>'
+              'css/style.css': 'scss/style.scss %>'
             }
           }
         },
         // Watch
         watch: {
           sass: {
-            files: '<%= project.src %>/scss/{,*/}*.{scss,sass}',
+            files: 'scss/{,*/}*.{scss,sass}',
             tasks: ['sass:dev']
           }
         }
