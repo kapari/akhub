@@ -1,3 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700);
+
 $body-bg: #fefefe;
 $body-font-color: #222;
-$body-font-family: Calibri, "Lucida Grande", Helvetica, Arial, sans-serif;
+$body-font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
+$link-color-hover: green;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: $body-bg;
+    font-family: $body-font-family;
+    color: $body-font-color;
+}
+
+h1, h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        color: $link-color-hover;
+    }
+}

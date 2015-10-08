@@ -1,2 +1,28 @@
 @import "normalize";
 @import "global";
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+    width: 90%;
+    max-width: 768px;
+    margin: 5em auto;
+}
+
+.box {
+    min-width: 250px;
+    min-height: 250px;
+    flex-grow: 1;
+    background-color: pink;
+    margin: 2px;
+    padding: 1.5em;
+}
+
+a.box {
+    opacity: 0.8;
+    &:hover {
+        opacity: 1;
+    }
+}
