@@ -1,19 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700);
 
-$body-bg: #fefefe;
+$body-bg: #f1eff2;
+$body-bg-img: '../img/symphony.png';
 $body-font-color: #222;
 $body-font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
-$link-color-hover: green;
+$link-color: #fefefe;
+$link-color-hover: white;
 
 * {
     box-sizing: border-box;
 }
 
+html {
+    background: $body-bg url($body-bg-img) repeat fixed;
+}
+
 body {
     width: 100%;
-    background-color: $body-bg;
+    height: 100%;
     font-family: $body-font-family;
     color: $body-font-color;
+    padding-top: 5em;
+    padding-bottom: 3em;
 }
 
 h1, h2 {
@@ -24,6 +32,7 @@ h1, h2 {
 
 a {
     text-decoration: none;
+    color: $link-color;
     &:hover {
         color: $link-color-hover;
     }
