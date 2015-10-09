@@ -12,38 +12,55 @@
 }
 
 .box {
-    min-width: 250px;
+    min-width: 260px;
     min-height: 250px;
     flex-grow: 1;
     margin: 5px;
-    padding: 1.5em 1em 1.5em 2em;
+    padding: 1.5em 1.5em 1.5em 2em;
     box-shadow: 0 8px 6px -6px #aaa;
     border-radius: 3px;
 }
 
 .name {
-    background-color: #ddd;
+    background-color: $link-color;
+    border: 1px solid #aaa;
+    h2 {
+        text-transform: none;
+        font-weight: 400;
+        margin-top: 0;
+    }
+    a {
+        color: $accent-color;
+        transition: all 0.5s ease;
+        &:hover {
+            color: darken($accent-color, 15%);
+        }
+    }
 }
 
+
+// Splitting the "background size" independently of the "background" breaks it
 .code {
-    background: #ccc url('http://www.arielkaplan.com/portfolio/portraitgabby.jpg') no-repeat;
+    background: #ccc url('../img/code_js.png') no-repeat;
     background-size: cover;
 }
 
 .design {
-    background: #ccc url('http://www.arielkaplan.com/portfolio/portraitgabby.jpg') no-repeat;
+    background: #ccc url('../img/art-gabby.jpg') no-repeat;
     background-size: cover;
 }
 
 .dance {
-    background: #ccc url('http://kapari.github.io/images/dance-bw.jpg') no-repeat;
+    background: #ccc url('../img/dance-bw.jpg') no-repeat;
     background-size: cover;
 }
 
 a.box {
     opacity: 0.8;
+    transition: all 0.5s ease;
     &:hover {
         opacity: 1;
-        box-shadow: 0 8px 6px -6px #999;
+        box-shadow: 0 10px 6px -6px #aaa;
+        transform: translateY(-3px);
     }
 }

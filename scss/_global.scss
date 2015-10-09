@@ -1,11 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700);
 
 $body-bg: #f1eff2;
-$body-bg-img: '../img/symphony.png';
+$body-bg-img: '../img/grey.png';
 $body-font-color: #222;
 $body-font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
 $link-color: #fefefe;
 $link-color-hover: white;
+$accent-color: #947B9B;
+// $tint-gradient:  linear-gradient(rgba(200, 200, 200, 0.45), rgba(200, 200, 200, 0.45));
 
 * {
     box-sizing: border-box;
@@ -26,8 +28,9 @@ body {
 
 h1, h2 {
     font-weight: 700;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     padding: 0;
+    margin-bottom: 0.5em;
 }
 
 a {
@@ -36,4 +39,12 @@ a {
     &:hover {
         color: $link-color-hover;
     }
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-left: -2.5em;
 }
