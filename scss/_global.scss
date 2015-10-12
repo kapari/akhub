@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700);
 
 $body-bg: #f1eff2;
+// bg image from subtlepatterns.com
 $body-bg-img: '../img/grey.png';
 $body-font-color: #222;
 $body-font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
@@ -24,6 +25,7 @@ body {
     color: $body-font-color;
     padding-top: 5em;
     padding-bottom: 3em;
+    font-size: 1.2em;
 }
 
 h1, h2 {
@@ -43,8 +45,5 @@ a {
 
 ul {
     list-style-type: none;
-}
-
-li {
-    margin-left: -2.5em;
+    padding-left: 0;
 }
