@@ -46,6 +46,19 @@ module.exports = function(grunt) {
                 files: 'scss/{,*/}*.{scss,sass}',
                 tasks: ['sass:dev']
             }
+        },
+        imagemin: {
+           dist: {
+              options: {
+                optimizationLevel: 2 // 0-7; default 3
+              },
+              files: [{
+                 expand: true,
+                 cwd: 'img/', // Src matches are relative to this path
+                 src: ['**/*.{png,jpg,gif}'], // Patterns to match
+                 dest: 'deploy/img'
+              }]
+           }
         }
     });
 

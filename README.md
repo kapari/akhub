@@ -10,4 +10,5 @@ Packages used:
 - grunt-contrib-uglify
 - grunt-contrib-sass
 - grunt-contrib-watch
+- grunt-contrib-imagemin
 - matchdep (dynamically load packages)
