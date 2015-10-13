@@ -8,7 +8,10 @@ $body-font-family: 'Alegreya Sans', Helvetica, Arial, sans-serif;
 $link-color: #fefefe;
 $link-color-hover: white;
 $accent-color: #947B9B;
-// $tint-gradient:  linear-gradient(rgba(200, 200, 200, 0.45), rgba(200, 200, 200, 0.45));
+$accent-dark: darken($accent-color, 20%);
+$accent-transparent: transparentize($accent-color, 0.5);
+$dark-transparent: rgba(0, 0, 0, 0.6);
+$tint-gradient:  linear-gradient(to right, $dark-transparent, rgba(200, 200, 200, 0.1));
 
 * {
     box-sizing: border-box;
@@ -24,7 +27,7 @@ body {
     font-family: $body-font-family;
     color: $body-font-color;
     padding-top: 5em;
-    padding-bottom: 3em;
+    padding-bottom: 5em;
     font-size: 1.2em;
 }
 

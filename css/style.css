@@ -247,7 +247,7 @@ body {
   font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
   color: #222;
   padding-top: 5em;
-  padding-bottom: 3em;
+  padding-bottom: 5em;
   font-size: 1.2em;
 }
 
@@ -280,6 +280,7 @@ ul {
 }
 
 .box {
+  position: relative;
   min-height: 250px;
   flex-grow: 1;
   margin: 5px;
@@ -306,17 +307,17 @@ ul {
 }
 
 .code {
-  background: #ccc url("../img/code_js.png") no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(200, 200, 200, 0.1)), url("../img/code_js.png") no-repeat;
   background-size: cover;
 }
 
 .design {
-  background: #ccc url("../img/art-gabby.jpg") no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(200, 200, 200, 0.1)), url("../img/art-gabby.jpg") no-repeat;
   background-size: cover;
 }
 
 .dance {
-  background: #ccc url("../img/dance-bw.jpg") no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(200, 200, 200, 0.1)), url("../img/dance-bw.jpg") no-repeat;
   background-size: cover;
 }
 
